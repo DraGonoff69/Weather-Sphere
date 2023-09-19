@@ -24,9 +24,9 @@ function TopButtons(props) {
         }
         ]
     return (
-        <div className='flex items-center justify-around my-6'>
+        <div className='flex items-center justify-around sm:text-xs my-6'>
             {cities.map((city) => (
-                <button key={city.id} className='text-white text-lg font-medium' onClick={()=>props.setLoc(city.title)}>{city.title}</button>
+                <button key={city.id} className='text-white lg:text-lg font-medium sm:text-xs' onClick={()=>props.setLoc(city.title)}>{city.title}</button>
             ))}
         </div>
     )

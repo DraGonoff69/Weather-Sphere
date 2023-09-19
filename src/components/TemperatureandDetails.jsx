@@ -5,24 +5,24 @@ function TemperatureandDetails(props) {
     return (
         <div>
 
-            <div className='flex items-center justify-center py-6 text-xl text-cyan-300'>
+            <div className='flex items-center justify-center py-6 lg:text-xl sm:text-sm text-cyan-300'>
                 <p>{props.Text}</p>
             </div>
-            <div className='flex flex-row items-center justify-between text-white py-3'>
-                <img src={props.Icon}alt="" className='w-20' />
+            <div className='flex flex-row items-center justify-between sm:text-sm text-white py-3'>
+                <img src={props.Icon} alt="" className='w-20 ' />
                 <p className='text-5xl'>{props.Temperature}°C</p>
-                <div className='flex flex-col space-y-2'>
-                    <div className='flex font-light text-sm item-center justify-center'>
-                        <UilTemperature size={15} className="mr-1" />
+                <div className='flex flex-col sm:text-xs space-y-2'>
+                    <div className='flex font-light text-sm sm:text-xs item-center justify-center'>
+                        <UilTemperature size={15} className="mr-1 sm:text-xs" />
                         Feels: {props.feels}°C
                         <span className='font-medium ml-1'></span>
                     </div>
-                    <div className='flex font-light text-sm item-center justify-center'>
-                        <UilTear size={15} className="mr-1" />
-                        Humidity:{props.Humidity}
+                    <div className='flex font-light text-sm sm:text-xs item-center justify-center'>
+                        <UilTear size={15} className="lg:mr-1 sm:w-1/2 " />
+                        Humidity: {props.Humidity}
                         <span className='font-medium ml-1'></span>
                     </div>
-                    <div className='flex font-light text-sm item-center justify-center'>
+                    <div className='flex font-light text-sm  sm:text-xs item-center justify-center'>
                         <UilWind size={15} className="mr-1" />
                         Wind: {props.Speed} km/hr
                         <span className='font-medium ml-1'></span>

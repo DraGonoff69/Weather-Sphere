@@ -5,7 +5,7 @@ import Weather from './components/Weather';
 // import UilReact from '@iconscout/react-unicons/icons/uil-react'
 function App() {
   return (
-    <div className='mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-grey-400'>
+    <div className='sm:mx-auto lg:max-w-screen-md sm:max-w-scree-sm sm:mt-4 sm:py-5 sm:px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-grey-400'>
       {/* <TopButtons /> */}
       {/* <Inputs /> */}
       <Weather/>
