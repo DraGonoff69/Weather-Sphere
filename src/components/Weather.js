@@ -103,7 +103,7 @@ function Weather() {
     }, [loc]);
     
     return (
-        <>
+        <div className='mb-10'>
             <TopButtons setLoc={setLoc} />
             <Inputs onSearch={setLoc} />
             {/* <div>Weather</div>
@@ -119,7 +119,7 @@ function Weather() {
             <Forecast title='Hourly Forecast' todayWeather={todayWeather} />
             <Forecast title='Daily Forecast' dailyWeather={dailyWeather}/>
 
-        </>
+        </div>
     );
 }
 
