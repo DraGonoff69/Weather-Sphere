@@ -106,14 +106,6 @@ function Weather() {
         <div className='mb-10'>
             <TopButtons setLoc={setLoc} />
             <Inputs onSearch={setLoc} />
-            {/* <div>Weather</div>
-            <div>Location: {data.city}</div>
-            <div>Temperature: {data.temperature}</div>
-            <div>feels: {data.feels}</div>
-            <div>Humidity: {data.humidity}</div>
-            <div>Speed: {data.speed}</div>
-            <div>Localtime: {data.localtime}</div> */}
-
             <TimeandLocation country={data.city} localtime={data.localtime} />
             <TemperatureandDetails Temperature={data.temperature} feels={data.feels} Humidity={data.humidity} Speed={data.speed} Text={data.Text} Icon={data.Icon} Set={data.Set} Rise={data.Rise} High={data.High} Low={data.Low} />
             <Forecast title='Hourly Forecast' todayWeather={todayWeather} />

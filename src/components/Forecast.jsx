@@ -1,9 +1,6 @@
 import React from 'react'
 
 function Forecast({ title, todayWeather,dailyWeather }) {
-
-  // console.log(hourlyData);
-
   return (
     <div>
       <div className='flex items-center justify-center my-6'>
